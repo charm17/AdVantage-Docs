@@ -14,7 +14,10 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/bistro_signup/';
+if (ENVIRONMENT == "development")
+	$config['base_url']	= 'http://localhost/AdVantageDocs/';
+else
+	$config['base_url']	= 'http://docs.advantage.sendtextnow.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -42,7 +45,9 @@ $config['cdn_url']	= '';
 | variable so that it is blank.
 |
 */
+if (ENVIRONMENT == "development")
 $config['index_page'] = 'index.php';
+else $config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
