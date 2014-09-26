@@ -39,11 +39,20 @@
 	        							<ul> 
 							        		<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Create"> Create Campaign </a> </li>
 							        			<ul>
-							        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Bulk"> Bulk Campaign </a> </li>
-							        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Locationbased"> Location-Based / LSMS </a> </li>
-							        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Hypertargeted"> Hyper Trageted / HSMS </a> </li>
+							        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Create"> Broadcast </a> </li>
+							        					<ul>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Bulk"> Bulk Campaign </a> </li>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Locationbased"> Location-Based / LSMS </a> </li>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Hypertargeted"> Hyper Trageted / HSMS </a> </li>
+									        			</ul>
+							        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Conversation"> Conversation </a> </li>
+							        					<ul>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Registration"> Registration </a> </li>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Quiz"> Quiz / LSMS </a> </li>
+									        				<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Survey"> Survey </a> </li>
+									        			</ul>
 							        			</ul>
-											<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#CampTable"> Campaign Table </a> </li>
+							        		<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#CampTable"> Campaign Table </a> </li>
 											<li> <a href="<?php echo site_url("sample/page_campaign"); ?>#Dash"> Campaign Dashboard </a> </li>
 										</ul>
 									</div>
@@ -129,7 +138,8 @@
 	<div class="col-sm-9">
 		<h1 id="Create"> <strong> Campaign </strong> </h1>
 			<h2 id="Create"> <strong> Create Campaign </strong> </h2>
-			<div style="padding-left: 20px;"> <h3 id="Bulk"> <strong> BULK Campaign </strong> </h3>
+			<h3 id="Create"> <strong> Broadcast </strong> </h3>
+			<div style="padding-left: 20px;"> <h4 id="Bulk"> <strong> BULK Campaign </strong> </h4>
 			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
 				<div class= "col-sm-112">
 					<div class="row-fluid">
@@ -657,7 +667,7 @@
 				            </div>
 						                 
 												
-			<h3 id="Locationbased"> <strong> LOCATION-BASED / LSMS Campaign </strong> </h3>
+			<h4 id="Locationbased"> <strong> LOCATION-BASED / LSMS Campaign </strong> </h4>
 			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
 				<div class="row-fluid">
 		            <div class="thumbnails">
@@ -1148,7 +1158,7 @@
 			                </div>
 			            </div>
 					      
-			<h3 id="Hypertargeted"> <strong> HYPER TARGETED / HSMS Campaign </strong> </h3>
+			<h4 id="Hypertargeted"> <strong> HYPER TARGETED / HSMS Campaign </strong> </h4>
 			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
 				<div class="row-fluid">
 		            <div class="thumbnails">
@@ -1682,11 +1692,1985 @@
 			            </div>
 			        </div> 
 
+			<h3 id="Conversation"> <strong> Conversation </strong> </h3>
+			<div style="padding-left: 20px;"> <h4 id="Registration"> <strong> Registration </strong> </h4>
+			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
+				<div class= "col-sm-112">
+					<div class="row-fluid">
+			            <div class="thumbnails">
+			            	<div class="span4">
+				               	<div class="thumbnail">
+				                  		<div class="caption">
+					                    	<h4> <strong> Step 1 </strong> </h4>
+							                    <ul> 
+													<li> Fill out Campaign Name </li>
+													<li> Select Sender ID </li>
+														<p> - Sender IDs are pre-approved by Account Managers. </p>
+													<li> Select Primary Keyword </li>
+													<li> Select Secondary Keyword </li>
+													<li> Fill out Campaign Header </li>
+													<li> Fill out Campaign Footer </li>
+													<li> Use Template (Optional) </li>
+														<ul>
+															<li>  New Template </li> <br>
+																<ul>
+																	<li> Click New Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/newtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> Fill out message. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/createtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Parameter</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">You may write your template message.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+																	<li> Click Create Template to save your new created template. Otherwise, the window will close and redirect you to Template table. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																</ul>
+															<li> Existing Template </li> <br>
+																<ul>	
+																	<li> Click Use Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/newtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> The Template table will appear.  </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																	<li> In the Action column, click Use the Template. </li> <br>
+																</ul>
+														</ul>
+													<li> Select Campaign Type </li> <br>
+														<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Campaign Type</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Bulk</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the contacts uploaded on the system.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Location-Based / LSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on specified location.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Hyper Targeted / HSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the profiles of the recepients.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+	
+													<li> Click Next </li> <br> 
+														<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_1.png" style="width:60%;"> </center> <br>
+												</ul>	
+													<table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Parameter</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Campaign Name</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Campaign label.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Sender ID</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Brand highlight/SMS from.</td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Primary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Primary keyword for campaign message. </td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Secondary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Secondary keyword for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Header</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Header for campign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Footer</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Footer for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Template</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Pre-formatted campaign message.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Campaign Type</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Based campaign by purpose (e.i Bulk, LSMS and HSMS)</td>
+												            </tr>
+												    	</tbody>
+												    </table>
+
+												    <table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Button</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Save as Draft</td>
+												                <td class="col-sm-5">you campaign will be saved as draft.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Next</td>
+												                <td class="col-sm-5">You will proceed to the next step.</td>
+												            </tr>
+												    	</tbody>
+												    </table>	
+			                   	   		</div>
+			                   	</div>   		
+			                </div>
+			            </div>
+
+						    <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 2 </strong> </h4>
+					                    	<ul> 
+						              			<li> Select Phonebook Group </li> <br>
+						              				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_2.png"  style="width:60%;"> </center> <br>
+							              				<ul>	
+							              					<li> No Group </li> <br>
+							              						<ul>
+							              							<li> Click Upload button. </li>
+							              							<li> A pop up window will appear. Fill out necessary fields.</li>
+							              							<li> Click Select Group. Otherwise, check Add to new group. </li>
+							              							<li> Write the name of your group in the Select group field.</li>
+							              							<li> In the Add option, choose if you Add to all group or New contacts only. </li> 
+							              								<ul>
+							              									<li> Add to all group - All your uploaded contacts will add to your group. </li>
+							              									<li> New contacts only - Unique contacts will be uploaded to your group to avoid duplicate. </li>
+							              								</ul>
+							              							<li> Check Yes in the Replace zero to prefix and fill out in the input field. </li>
+							              							<li> In the File, click the Select file to locate your file. The file type must be .csv</li>
+							              							<li> Click Next. </li>	
+							              							<li> You will be redirect to the Contact Uploads page.</li>
+							              							<li> If the upload status is complete, go back to create campaign and click next.</li>
+							              							<li> You  may now select your group in the Phonebook Group.</li> <br>
+							              						</ul>
+							              					<li> Existing Group </li><br>
+							              						<ul>
+							              							<li> Select on the phonebook group your group/s. </li>
+							              							<li> Click Next.</li>
+							              								<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/existinggroup.png"  style="width:60%;"> </center> <br>
+							              						</ul>
+							              	</ul>
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Parameter</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Phonebook Group</td>
+											                <td class="col-sm-5"><strong>Required</strong>. Select desired recipient of campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Button</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Upload</td>
+											                <td class="col-sm-5"><strong>Optional</strong>. If no available contact group. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Back</td>
+											                <td class="col-sm-5">Going back to the previous page.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Save as Draft</td>
+											                <td class="col-sm-5">Your campaign will not be created, just saved it as draft.</td>
+											            </tr>
+
+											             <tr>
+											                <td class="col-sm-1">Next</td>
+											                <td class="col-sm-5">You will proceed to the next step in creating campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+			                    	</div>
+			                	</div>
+			            	</div>
+						            
+				            <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 3 </strong> </h4>
+									        <ul> 
+						              			<li> Scheduled campaign (Optional) </li> <br>
+						              				<ul>
+						              					<li> If you click the checkbox, you have to set the scheduled date. </li> 
+						              					<li> If you click the checkbox, you have to set the repeated date or schedule. </li> <br>
+						              						<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_3.png"  style="width:60%;"> </center> <br> 
+						              							<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Parameter</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Campaign Start</td>
+															                <td class="col-sm-5">Calendar Ready. Date from. (YYYY-MM-DD HH:MM)</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Campaign End</td>
+															                <td class="col-sm-5">Calendar Ready. Date to. (YYYY-MM-DD HH:MM) </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Daily</td>
+															                <td class="col-sm-5">If Daily, campaign will be sent daily as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Weekly</td>
+															                <td class="col-sm-5">If Weekly, campaign will be sent weekly as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Monthly</td>
+															                <td class="col-sm-5">If Monthly, campaign will be sent monthly as scheduled. </td>
+															            </tr>
+															        </tbody>
+																</table>
+
+																<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Button</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Back</td>
+															                <td class="col-sm-5">You will go back to the previous step.</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Create Campaign</td>
+															                <td class="col-sm-5">Your campaign will be created.</td>
+															            </tr>
+															        </tbody>
+																</table>
+						              					<li> Click Create Campaign.</li> <br>	
+						              				</ul>
+												<li> Create Campaign </li>	
+												<li> A summary of your campaign will be displayed. </li> <br>
+													<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_summary.png"  style="width:60%;"> </center> <br>   	
+														<table class="table table-bordered table-striped">
+															<thead>
+													            <tr>
+													                <th class="col-sm-2"><span>Button</span></th> 
+													                <th class="col-sm-6"><span>Description</span></th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td class="col-sm-1">Edit</td>
+													                <td class="col-sm-5">You will go back to the first step and able to edit your campaign.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Send Test</td>
+													                <td class="col-sm-5">Your campaign will send a test to test numbers.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Next</td>
+													                <td class="col-sm-5">Your campaign will be created.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Simulate Questionnaire</td>
+													                <td class="col-sm-5">Your going to test the campaign.</td>
+													            </tr>
+													        </tbody>
+														</table>
+												<li> Click Next. </li> <br>		
+											</ul>
+									</div>
+				                </div>
+				            </div>
+
+			<h4 id="Quiz"> <strong> Quiz </strong> </h4>
+			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
+				<div class= "col-sm-112">
+					<div class="row-fluid">
+			            <div class="thumbnails">
+			            	<div class="span4">
+				               	<div class="thumbnail">
+				                  		<div class="caption">
+											<h4> <strong> Create Quiz </strong> </h4>
+				                  				<ul>
+				                  					<li> Fill out or Select Access Code </li>
+				                  					<li> Select Expiration Date </li>
+				                  					<li> Fill out Max Retries </li>
+				                  					<li> Fill out Question Number </li>
+				                  					<li> Fill out Question </li>
+				                  					<li> Fill out Answer Code </li>
+				                  					<li> Fill out Answer Text </li>
+				                  					<li> Select checkbox for the correct answer </li><br>
+				                  					<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_1.png" style="width:70%;"> </center> <br>
+				                  				</ul>
+				                  					<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Parameter</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody> 
+											        	<tr>
+											                <td class="col-sm-1">Access Code</td>
+											                <td class="col-sm-5">Access number of the campaign. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Expiration Date</td>
+											                <td class="col-sm-5">Expiration date of the campaign. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Max Retries</td>
+											                <td class="col-sm-5">Max Retries of participant to answer the quiz correctly. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question Type</td>
+											                <td class="col-sm-5">Multiple Choice (default). </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question Number</td>
+											                <td class="col-sm-5">Number Question. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question</td>
+											                <td class="col-sm-5">Your Question needed for Quiz.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Answer Code</td>
+											                <td class="col-sm-5">Answer Code for the Quiz.  (e.g. Yes or No)</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Answer Text</td>
+											                <td class="col-sm-5">Answer text for the Quiz. (e.g. Red, Yellow, Blue)</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Correct (checkbox )</td>
+											                <td class="col-sm-5">Select correct answer/s.</td>
+											            </tr>
+											        </tbody>
+												</table>
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Button</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody> 
+											            <tr>
+											                <td class="col-sm-1">Add Option</td>
+											                <td class="col-sm-5">To add answer code and answer text. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Add Question</td>
+											                <td class="col-sm-5">To add another question.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Submit</td>
+											                <td class="col-sm-5">To save and proceed to the next step.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Delete button</td>
+											                <td class="col-sm-5">To delete question of the quiz. .</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Up button</td>
+											                <td class="col-sm-5">To move up question.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Down button</td>
+											                <td class="col-sm-5">To move down question.</td>
+											            </tr>
+											        </tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="span4">
+				                		<div class="thumbnail">
+				                			<div class="caption">			
+					                    	<h4> <strong> Step 1 </strong> </h4>
+							                    <ul> 
+													<li> Fill out Campaign Name </li>
+													<li> Select Sender ID </li>
+														<p> - Sender IDs are pre-approved by Account Managers. </p>
+													<li> Select Primary Keyword </li>
+													<li> Select Secondary Keyword </li>
+													<li> Fill out Campaign Header </li>
+													<li> Fill out Campaign Footer </li>
+													<li> Use Template (Optional) </li>
+														<ul>
+															<li>  New Template </li> <br>
+																<ul>
+																	<li> Click New Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_2.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Campaign Name</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Campaign label.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Sender ID</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Brand highlight/SMS from.</td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Primary Keyword</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Primary keyword for campaign message. </td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Secondary Keyword</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Secondary keyword for campaign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Header</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Header for campign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Footer</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Footer for campaign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Template</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Pre-formatted campaign message.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Campaign Type</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Based campaign by purpose (e.i Bulk, LSMS and HSMS)</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		           <tr>
+																		                <td class="col-sm-1">Save as Draft</td>
+																		                <td class="col-sm-5">Your campaign will not be created, just saved it as draft.</td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">You will proceed to the next step in creating campaign.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> Fill out message. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/createtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Parameter</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">You may write your template message.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+																	<li> Click Create Template to save your new created template. Otherwise, the window will close and redirect you to Template table. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																</ul>
+															<li> Existing Template </li> <br>
+																<ul>	
+																	<li> Click Use Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/newtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> The Template table will appear.  </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																	<li> In the Action column, click Use the Template. </li> <br>
+																</ul>
+														</ul>
+													<li> Select Campaign Type </li> <br>
+														<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Campaign Type</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Bulk</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the contacts uploaded on the system.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Location-Based / LSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on specified location.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Hyper Targeted / HSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the profiles of the recepients.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+	
+													<li> Click Next </li> <br> 
+														<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_2.png" style="width:60%;"> </center> <br>
+												</ul>	
+													<table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Parameter</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Campaign Name</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Campaign label.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Sender ID</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Brand highlight/SMS from.</td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Primary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Primary keyword for campaign message. </td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Secondary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Secondary keyword for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Header</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Header for campign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Footer</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Footer for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Template</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Pre-formatted campaign message.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Campaign Type</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Based campaign by purpose (e.i Bulk, LSMS and HSMS)</td>
+												            </tr>
+												    	</tbody>
+												    </table>
+
+												    <table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Button</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Save as Draft</td>
+												                <td class="col-sm-5">Your campaign will be saved as draft.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Next</td>
+												                <td class="col-sm-5">You will proceed to the next step.</td>
+												            </tr>
+												    	</tbody>
+												    </table>	
+			                   	   		</div>
+			                   	</div>   		
+			                </div>
+			            </div>
+
+						    <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 2 </strong> </h4>
+					                    	<ul> 
+						              			<li> Select Phonebook Group </li> <br>
+						              				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_3.png"  style="width:60%;"> </center> <br>
+							              				<ul>	
+							              					<li> No Group </li> <br>
+							              						<ul>
+							              							<li> Click Upload button. </li>
+							              							<li> A pop up window will appear. Fill out necessary fields.</li>
+							              							<li> Click Select Group. Otherwise, check Add to new group. </li>
+							              							<li> Write the name of your group in the Select group field.</li>
+							              							<li> In the Add option, choose if you Add to all group or New contacts only. </li> 
+							              								<ul>
+							              									<li> Add to all group - All your uploaded contacts will add to your group. </li>
+							              									<li> New contacts only - Unique contacts will be uploaded to your group to avoid duplicate. </li>
+							              								</ul>
+							              							<li> Check Yes in the Replace zero to prefix and fill out in the input field. </li>
+							              							<li> In the File, click the Select file to locate your file. The file type must be .csv</li>
+							              							<li> Click Next. </li>	
+							              							<li> You will be redirect to the Contact Uploads page.</li>
+							              							<li> If the upload status is complete, go back to create campaign and click next.</li>
+							              							<li> You  may now select your group in the Phonebook Group.</li> <br>
+							              						</ul>
+							              					<li> Existing Group </li><br>
+							              						<ul>
+							              							<li> Select on the phonebook group your group/s. </li>
+							              							<li> Click Next.</li>
+							              								<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/existinggroup.png"  style="width:60%;"> </center> <br>
+							              						</ul>
+							              	</ul>
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Parameter</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Phonebook Group</td>
+											                <td class="col-sm-5"><strong>Required</strong>. Select desired recipient of campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Button</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Upload</td>
+											                <td class="col-sm-5"><strong>Optional</strong>. If no available contact group. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Back</td>
+											                <td class="col-sm-5">Going back to the previous page.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Save as Draft</td>
+											                <td class="col-sm-5">Your campaign will not be created, just saved it as draft.</td>
+											            </tr>
+
+											             <tr>
+											                <td class="col-sm-1">Next</td>
+											                <td class="col-sm-5">You will proceed to the next step in creating campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+			                    	</div>
+			                	</div>
+			            	</div>
+						            
+				            <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 3 </strong> </h4>
+									        <ul> 
+						              			<li> Scheduled campaign (Optional) </li> <br>
+						              				<ul>
+						              					<li> If you click the checkbox, you have to set the scheduled date. </li> 
+						              					<li> If you click the checkbox, you have to set the repeated date or schedule. </li> <br>
+						              						<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_3.png"  style="width:60%;"> </center> <br> 
+						              							<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Parameter</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Campaign Start</td>
+															                <td class="col-sm-5">Calendar Ready. Date from. (YYYY-MM-DD HH:MM)</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Campaign End</td>
+															                <td class="col-sm-5">Calendar Ready. Date to. (YYYY-MM-DD HH:MM) </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Daily</td>
+															                <td class="col-sm-5">If Daily, campaign will be sent daily as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Weekly</td>
+															                <td class="col-sm-5">If Weekly, campaign will be sent weekly as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Monthly</td>
+															                <td class="col-sm-5">If Monthly, campaign will be sent monthly as scheduled. </td>
+															            </tr>
+															        </tbody>
+																</table>
+
+																<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Button</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Back</td>
+															                <td class="col-sm-5">You will go back to the previous step.</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Create Campaign</td>
+															                <td class="col-sm-5">Your campaign will be created.</td>
+															            </tr>
+															        </tbody>
+																</table>
+						              					<li> Click Create Campaign.</li> <br>	
+						              				</ul>
+												<li> Create Campaign </li>	
+												<li> A summary of your campaign will be displayed. </li> <br>
+													<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_summary.png"  style="width:60%;"> </center> <br>   	
+														<table class="table table-bordered table-striped">
+															<thead>
+													            <tr>
+													                <th class="col-sm-2"><span>Button</span></th> 
+													                <th class="col-sm-6"><span>Description</span></th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td class="col-sm-1">Edit</td>
+													                <td class="col-sm-5">You will go back to the first step and able to edit your campaign.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Send Test</td>
+													                <td class="col-sm-5">Your campaign will send a test to test numbers.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Next</td>
+													                <td class="col-sm-5">Your campaign will be created.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Simulate Questionnaire</td>
+													                <td class="col-sm-5">To test the campaign.</td>
+													            </tr>
+													        </tbody>
+														</table>
+												<li> Click Next. </li> <br>		
+											</ul>
+									</div>
+				                </div>
+				            </div>
+
+			<h4 id="Quiz"> <strong> Survey </strong> </h4>
+			<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>
+				<div class= "col-sm-112">
+					<div class="row-fluid">
+			            <div class="thumbnails">
+			            	<div class="span4">
+				               	<div class="thumbnail">
+				                  		<div class="caption">
+											<h4> <strong> Create Survey </strong> </h4>
+				                  				<ul>
+				                  					<li> Fill out or Select Access Code </li>
+				                  					<li> Select Expiration Date </li>
+				                  					<li> Select Question Type </li>
+				                  						<ul>
+				                  							<li> Multiple Choice </li>
+				                  							<li> Free-form </li>
+				                  						</ul>
+				                  					<li> Fill out Question Number </li>
+				                  					<li> Fill out Question </li>
+				                  					<li> Fill out Answer Code </li>
+				                  					<li> Fill out Answer Text </li><br>
+				                  					<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/survey_1.png" style="width:70%;"> </center> <br>
+				                  					<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/freeform.png" style="width:70%;"> </center> <br>
+				                  				</ul>
+				                  					<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Parameter</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody> 
+											        	<tr>
+											                <td class="col-sm-1">Access Code</td>
+											                <td class="col-sm-5">Access number of the campaign. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Expiration Date</td>
+											                <td class="col-sm-5">Expiration date of the campaign. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question Type</td>
+											                <td class="col-sm-5">Multiple Choice or Free-form. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question Number</td>
+											                <td class="col-sm-5">Number Question. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Question</td>
+											                <td class="col-sm-5">Your Question needed for Quiz.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Answer Code</td>
+											                <td class="col-sm-5">Answer Code for the Quiz.  (e.g. Yes or No)</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Answer Text</td>
+											                <td class="col-sm-5">Answer text for the Quiz. (e.g. Red, Yellow, Blue)</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Correct (checkbox )</td>
+											                <td class="col-sm-5">Select correct answer/s.</td>
+											            </tr>
+											        </tbody>
+												</table>
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Button</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody> 
+											            <tr>
+											                <td class="col-sm-1">Add Option</td>
+											                <td class="col-sm-5">To add answer code and answer text. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Add Question</td>
+											                <td class="col-sm-5">To add another question.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Submit</td>
+											                <td class="col-sm-5">To save and proceed to the next step.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Delete button</td>
+											                <td class="col-sm-5">To delete question of the quiz. .</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Up button</td>
+											                <td class="col-sm-5">To move up question.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Down button</td>
+											                <td class="col-sm-5">To move down question.</td>
+											            </tr>
+											        </tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="span4">
+				                		<div class="thumbnail">
+				                			<div class="caption">			
+					                    	<h4> <strong> Step 1 </strong> </h4>
+							                    <ul> 
+													<li> Fill out Campaign Name </li>
+													<li> Select Sender ID </li>
+														<p> - Sender IDs are pre-approved by Account Managers. </p>
+													<li> Select Primary Keyword </li>
+													<li> Select Secondary Keyword </li>
+													<li> Fill out Campaign Header </li>
+													<li> Fill out Campaign Footer </li>
+													<li> Use Template (Optional) </li>
+														<ul>
+															<li>  New Template </li> <br>
+																<ul>
+																	<li> Click New Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_2.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Campaign Name</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Campaign label.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Sender ID</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Brand highlight/SMS from.</td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Primary Keyword</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Primary keyword for campaign message. </td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Secondary Keyword</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Secondary keyword for campaign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Header</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Header for campign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Footer</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Footer for campaign message. </td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Template</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Pre-formatted campaign message.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Campaign Type</td>
+																		                <td class="col-sm-5"><strong>Required</strong>. Based campaign by purpose (e.i Bulk, LSMS and HSMS)</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		           <tr>
+																		                <td class="col-sm-1">Save as Draft</td>
+																		                <td class="col-sm-5">Your campaign will not be created, just saved it as draft.</td>
+																		            </tr>
+
+																		             <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">You will proceed to the next step in creating campaign.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> Fill out message. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/createtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Parameter</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">You may write your template message.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+																	<li> Click Create Template to save your new created template. Otherwise, the window will close and redirect you to Template table. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																</ul>
+															<li> Existing Template </li> <br>
+																<ul>	
+																	<li> Click Use Template. </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/newtemplate.png" style="width:70%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+																	<li> The Template table will appear.  </li> <br>
+																		<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/templatetable.png" style="width:90%;"> </center> <br>
+																			<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Column</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">ID</td>
+																		                <td class="col-sm-5">Template ID</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Message</td>
+																		                <td class="col-sm-5">Template Message</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Action</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Use Template</td>
+																		                <td class="col-sm-5">You may use the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Edit Template</td>
+																		                <td class="col-sm-5">You may edit the selected template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Delete Template</td>
+																		                <td class="col-sm-5">You may delete the selected template.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>
+
+																		    <table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">New Template</td>
+																		                <td class="col-sm-5">You may create new template.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Previous</td>
+																		                <td class="col-sm-5">Will lead you back to the previous page.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Next</td>
+																		                <td class="col-sm-5">Will lead you forward to the next page.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>		
+																	<li> In the Action column, click Use the Template. </li> <br>
+																</ul>
+														</ul>
+													<li> Select Campaign Type </li> <br>
+														<table class="table table-bordered table-striped">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Campaign Type</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		            <tr>
+																		                <td class="col-sm-1">Bulk</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the contacts uploaded on the system.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Location-Based / LSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on specified location.</td>
+																		            </tr>
+
+																		            <tr>
+																		                <td class="col-sm-1">Hyper Targeted / HSMS</td>
+																		                <td class="col-sm-5">Campaign recepients are based on the profiles of the recepients.</td>
+																		            </tr>
+																		    	</tbody>
+																		    </table>	
+	
+													<li> Click Next </li> <br> 
+														<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_2.png" style="width:60%;"> </center> <br>
+												</ul>	
+													<table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Parameter</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Campaign Name</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Campaign label.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Sender ID</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Brand highlight/SMS from.</td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Primary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Primary keyword for campaign message. </td>
+												            </tr>
+
+												             <tr>
+												                <td class="col-sm-1">Secondary Keyword</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Secondary keyword for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Header</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Header for campign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Footer</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Footer for campaign message. </td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Template</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Pre-formatted campaign message.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Campaign Type</td>
+												                <td class="col-sm-5"><strong>Required</strong>. Based campaign by purpose (e.i Bulk, LSMS and HSMS)</td>
+												            </tr>
+												    	</tbody>
+												    </table>
+
+												    <table class="table table-bordered table-striped">
+					                					<thead>
+												            <tr>
+												                <th class="col-sm-2"><span>Button</span></th> 
+												                <th class="col-sm-6"><span>Description</span></th>
+												            </tr>
+												        </thead>
+												        <tbody>
+												            <tr>
+												                <td class="col-sm-1">Save as Draft</td>
+												                <td class="col-sm-5">you campaign will be saved as draft.</td>
+												            </tr>
+
+												            <tr>
+												                <td class="col-sm-1">Next</td>
+												                <td class="col-sm-5">You will proceed to the next step.</td>
+												            </tr>
+												    	</tbody>
+												    </table>	
+			                   	   		</div>
+			                   	</div>   		
+			                </div>
+			            </div>
+
+						    <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 2 </strong> </h4>
+					                    	<ul> 
+						              			<li> Select Phonebook Group </li> <br>
+						              				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/quiz_3.png"  style="width:60%;"> </center> <br>
+							              				<ul>	
+							              					<li> No Group </li> <br>
+							              						<ul>
+							              							<li> Click Upload button. </li>
+							              							<li> A pop up window will appear. Fill out necessary fields.</li>
+							              							<li> Click Select Group. Otherwise, check Add to new group. </li>
+							              							<li> Write the name of your group in the Select group field.</li>
+							              							<li> In the Add option, choose if you Add to all group or New contacts only. </li> 
+							              								<ul>
+							              									<li> Add to all group - All your uploaded contacts will add to your group. </li>
+							              									<li> New contacts only - Unique contacts will be uploaded to your group to avoid duplicate. </li>
+							              								</ul>
+							              							<li> Check Yes in the Replace zero to prefix and fill out in the input field. </li>
+							              							<li> In the File, click the Select file to locate your file. The file type must be .csv</li>
+							              							<li> Click Next. </li>	
+							              							<li> You will be redirect to the Contact Uploads page.</li>
+							              							<li> If the upload status is complete, go back to create campaign and click next.</li>
+							              							<li> You  may now select your group in the Phonebook Group.</li> <br>
+							              						</ul>
+							              					<li> Existing Group </li><br>
+							              						<ul>
+							              							<li> Select on the phonebook group your group/s. </li>
+							              							<li> Click Next.</li>
+							              								<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/existinggroup.png"  style="width:60%;"> </center> <br>
+							              						</ul>
+							              	</ul>
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Parameter</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Phonebook Group</td>
+											                <td class="col-sm-5"><strong>Required</strong>. Select desired recipient of campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+
+												<table class="table table-bordered table-striped">
+													<thead>
+											            <tr>
+											                <th class="col-sm-2"><span>Button</span></th> 
+											                <th class="col-sm-6"><span>Description</span></th>
+											            </tr>
+											        </thead>
+											        <tbody>
+											            <tr>
+											                <td class="col-sm-1">Upload</td>
+											                <td class="col-sm-5"><strong>Optional</strong>. If no available contact group. </td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Back</td>
+											                <td class="col-sm-5">Going back to the previous page.</td>
+											            </tr>
+
+											            <tr>
+											                <td class="col-sm-1">Save as Draft</td>
+											                <td class="col-sm-5">Your campaign will not be created, just saved it as draft.</td>
+											            </tr>
+
+											             <tr>
+											                <td class="col-sm-1">Next</td>
+											                <td class="col-sm-5">You will proceed to the next step in creating campaign.</td>
+											            </tr>
+											        </tbody>
+												</table>	
+			                    	</div>
+			                	</div>
+			            	</div>
+						            
+				            <div class="span4">
+				                <div class="thumbnail">
+				                	<div class="caption">
+				                    	<h4> <strong> Step 3 </strong> </h4>
+									        <ul> 
+						              			<li> Scheduled campaign (Optional) </li> <br>
+						              				<ul>
+						              					<li> If you click the checkbox, you have to set the scheduled date. </li> 
+						              					<li> If you click the checkbox, you have to set the repeated date or schedule. </li> <br>
+						              						<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/reg_3.png"  style="width:60%;"> </center> <br> 
+						              							<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Parameter</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Campaign Start</td>
+															                <td class="col-sm-5">Calendar Ready. Date from. (YYYY-MM-DD HH:MM)</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Campaign End</td>
+															                <td class="col-sm-5">Calendar Ready. Date to. (YYYY-MM-DD HH:MM) </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Daily</td>
+															                <td class="col-sm-5">If Daily, campaign will be sent daily as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Weekly</td>
+															                <td class="col-sm-5">If Weekly, campaign will be sent weekly as scheduled. </td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Monthly</td>
+															                <td class="col-sm-5">If Monthly, campaign will be sent monthly as scheduled. </td>
+															            </tr>
+															        </tbody>
+																</table>
+
+																<table class="table table-bordered table-striped">
+																	<thead>
+															            <tr>
+															                <th class="col-sm-2"><span>Button</span></th> 
+															                <th class="col-sm-6"><span>Description</span></th>
+															            </tr>
+															        </thead>
+															        <tbody>
+															            <tr>
+															                <td class="col-sm-1">Back</td>
+															                <td class="col-sm-5">You will go back to the previous step.</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Create Campaign</td>
+															                <td class="col-sm-5">Your campaign will be created.</td>
+															            </tr>
+															        </tbody>
+																</table>
+						              					<li> Click Create Campaign.</li> <br>	
+						              				</ul>
+												<li> Create Campaign </li>	
+												<li> A summary of your campaign will be displayed. </li> <br>
+													<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/survey_summary.png"  style="width:60%;"> </center> <br>   	
+														<table class="table table-bordered table-striped">
+															<thead>
+													            <tr>
+													                <th class="col-sm-2"><span>Button</span></th> 
+													                <th class="col-sm-6"><span>Description</span></th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td class="col-sm-1">Edit</td>
+													                <td class="col-sm-5">You will go back to the first step and able to edit your campaign.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Send Test</td>
+													                <td class="col-sm-5">Your campaign will send a test to test numbers.</td>
+													            </tr>
+
+													             <tr>
+													                <td class="col-sm-1">Next</td>
+													                <td class="col-sm-5">Your campaign will be created.</td>
+													            </tr>
+													        </tbody>
+														</table>
+												<li> Click Next. </li> <br>		
+											</ul>
+									</div>
+				                </div>
+				            </div>        	            
+
+
+
+
+
+
 				<h2 id="CampTable"> <strong> Campaign Table </strong> </h2>
 				<a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_campaign"); ?>" >Back to Top</a> <br> <br>        	
 					<div class="span4">
 				                <div class="thumbnail">
-				                	<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/viewcamp.png"  style="width:90%;">  
+				                	<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/campaign_table.png"  style="width:90%;">  
 					                	<div class="caption">
 					                    	<p> Show campaigns that are active or not, runs at the moment, locked and needs an action.  </p><br> 
 				          	        			
@@ -1763,6 +3747,11 @@
 												            </tr>
 												        </thead>
 												        <tbody>
+												        	 <tr>
+												                <td class="col-sm-1">Simulate Conversation </td>
+												            	<td class="col-sm-5">You test your created conversation.</td>
+												            </tr>
+
 												            <tr>
 												                <td class="col-sm-1">Edit </td>
 												            	<td class="col-sm-5">You may edit your created campaign saved as draft.</td>
@@ -1920,6 +3909,107 @@
 									                <td class="col-sm-5"><strong>Downloadable</strong>. Error and SMS traffic report. </td>
 									            </tr>
 									        </tbody>    
+										</table>
+
+										<table class="table table-bordered table-striped">
+											<thead>
+									            <tr>
+									                <th class="col-sm-2"><span>Button</span></th> 
+									                <th class="col-sm-6"><span>Description</span></th>
+									            </tr>
+									        </thead>
+									        <tbody>
+									            <tr>
+									                <td class="col-sm-1">View Responses</td>
+									                <td class="col-sm-5">View Inbox of selected campaign. </td>
+									            </tr>
+
+									            <tr>
+									                <td class="col-sm-1">Simulate Conversation</td>
+									                <td class="col-sm-5">Your going to test the created conversation. </td>
+									            </tr>
+
+									             <tr>
+									                <td class="col-sm-1">Previous</td>
+									                <td class="col-sm-5">You will go back to the previous page. </td>
+									            </tr>
+
+									            <tr>
+									                <td class="col-sm-1">Next</td>
+									                <td class="col-sm-5">You will forward to the next page.</td>
+									            </tr>
+									        </tbody>
+										</table>
+										<li> When you click View Responses </li><br>
+										<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/inboundsms.png"  style="width:90%;"> </center><br> 
+		                    				<table class="table table-bordered table-striped">
+												<thead>
+										            <tr>
+										                <th class="col-sm-2"><span>Column</span></th> 
+										                <th class="col-sm-6"><span>Description</span></th>
+										            </tr>
+										        </thead>
+										        <tbody>
+										            <tr>
+										                <td class="col-sm-1">ID</td>
+										                <td class="col-sm-5">Message ID. </td>
+										            </tr>
+
+										             <tr>
+										                <td class="col-sm-1">Mobile</td>
+										                <td class="col-sm-5">Participant's mobile number. </td>
+										            </tr>
+
+										            <tr>
+										                <td class="col-sm-1">Inbound Message</td>
+										                <td class="col-sm-5">Participant's message.</td>
+										            </tr>
+
+										            <tr>
+										                <td class="col-sm-1">Price</td>
+										                <td class="col-sm-5">Inbound message price.</td>
+										            </tr>
+
+										            <tr>
+										                <td class="col-sm-1">Outbound Message</td>
+										                <td class="col-sm-5">System's acknowledgement or response.</td>
+										            </tr>
+
+										            <tr>
+										                <td class="col-sm-1">Price</td>
+										                <td class="col-sm-5">Outbound message price.</td>
+										            </tr>
+
+										            <tr>
+										                <td class="col-sm-1">Action</td>
+										                <td class="col-sm-5">Save participant's mobile number to phonebook.</td>
+										            </tr>
+										        </tbody>
+											</table>
+
+											<table class="table table-bordered table-striped">
+											<thead>
+									            <tr>
+									                <th class="col-sm-2"><span>Button</span></th> 
+									                <th class="col-sm-6"><span>Description</span></th>
+									            </tr>
+									        </thead>
+									        <tbody>
+									            <tr>
+									                <td class="col-sm-1">Back to dashboard</td>
+									                <td class="col-sm-5">You will go back to campaign's dashboard. </td>
+									            </tr>
+
+									            <tr>
+									                <td class="col-sm-1">Previous</td>
+									                <td class="col-sm-5">You will go back to the previous page. </td>
+									            </tr>
+
+									            <tr>
+									                <td class="col-sm-1">Next</td>
+									                <td class="col-sm-5">You will forward to the next page.</td>
+									            </tr>
+									        </tbody>
 										</table>
 		                    	</div>
 		                </div>

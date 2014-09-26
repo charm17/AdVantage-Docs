@@ -61,7 +61,7 @@
 												<li><a href="<?php echo site_url("sample/page_admin"); ?>#AccountMgt">Account Management</a> </li>
 													<ul>
 														<li><a href="<?php echo site_url("sample/page_admin"); ?>#AccountDetails">Account Details </a></li>
-														<li><a href="<?php echo site_url("sample/page_admin"); ?>#AccountSettings">Account Settings </a></li>
+														<li><a href="<?php echo site_url("sample/page_admin"); ?>#UpdateSettings">Update Settings </a></li>
 														<li><a href="<?php echo site_url("sample/page_admin"); ?>#Billing">Billing</a></li>
 														<li><a href="<?php echo site_url("sample/page_admin"); ?>#Reports">Reports</a></li>
 															<ul>
@@ -94,7 +94,8 @@
 									<div id="collapseTwo" class="panel-collapse collapse">
 		      							<div class="panel-body">
 		        							<ul> 
-								        		<li><a href="<?php echo site_url("sample/page_admin"); ?>#TransacSearch">Transaction Search</a></li>
+								        		<li><a href="<?php echo site_url("sample/page_admin"); ?>#Inboundlogs">Inbound Logs</a></li>
+												<li><a href="<?php echo site_url("sample/page_admin"); ?>#TransacSearch">Transaction Search</a></li>
 											</ul>
 										</div>
 									</div>
@@ -522,12 +523,12 @@
 
 												            <tr>
 												                <td class="col-sm-1">Phonebook Uploader</td>
-												                <td class="col-sm-5">Up/Down status</td>
+												                <td class="col-sm-5">Up or Down status</td>
 												            </tr>
 
 												            <tr>
 												                <td class="col-sm-1">Campaign Manager</td>
-												                <td class="col-sm-5">Up/Down status</td>
+												                <td class="col-sm-5">Up or Down status</td>
 												            </tr>
 												        </tbody>
 													</table>	
@@ -878,6 +879,11 @@
 														            </tr>
 
 														            <tr>
+														                <td class="col-sm-1">Account Type</td>
+														                <td class="col-sm-5">Account type if Postpaid or Prepaid.</td>
+														            </tr>
+
+														            <tr>
 														                <td class="col-sm-1">Billing Type</td>
 														                <td class="col-sm-5">Your type of billing. (e.g., Monetary)</td>
 														            </tr>
@@ -891,18 +897,28 @@
 														                <td class="col-sm-1">Currency</td>
 														                <td class="col-sm-5">Medium of exchange. (e.g., Philippine Peso, USD, EUR and etc.)</td>
 														            </tr>
+
+														            <tr>
+														                <td class="col-sm-1">Opt Out Message</td>
+														                <td class="col-sm-5">Opt Out message.</td>
+														            </tr>
+
+														            <tr>
+														                <td class="col-sm-1">Carbon Token</td>
+														                <td class="col-sm-5">Token per account.</td>
+														            </tr>
 	             										        </tbody>
 														    </table>	
 						                   	   	</div>  
 						                </div>
 						            </div> 
 
-						        <h4 id="AccountSettings"> <strong> Update Settings </strong> </h4>
+						        <h4 id="UpdateSettings"> <strong> Update Settings </strong> </h4>
 						        <a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_admin"); ?>" >Back to Top</a> <br> <br>	
 									<div class="span4">
 						               	<div class="thumbnail">
 						                  		<div class="caption">
-						                  			<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/adminacctsettings.png" style="width: 80%;"> </center> <br> 
+						                  			<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/adminacctsettings.png" style="width: 100%;"> </center> <br> 
 							                  			<p> User can update the basic settings of each account: </p>
 							                  				<ul>
 							                  					<li> Set the credit limit per account. </li>
@@ -922,8 +938,18 @@
 															            </tr>
 
 															            <tr>
+															                <td class="col-sm-1">Account Type</td>
+															                <td class="col-sm-5">Account type. e.g, Prepaid or Postpaid</td>
+															            </tr>
+
+															            <tr>
 															                <td class="col-sm-1">Credit Limit</td>
 															                <td class="col-sm-5">Maximum amount of credit that a user is authorized to use.</td>
+															            </tr>
+
+															            <tr>
+															                <td class="col-sm-1">Opt Out Message</td>
+															                <td class="col-sm-5">Opt out message.</td>
 															            </tr>
 																	 </tbody>
 															    </table>	
@@ -1384,11 +1410,14 @@
 						               	<div class="thumbnail">
 						                  	<div class="caption">
 						                  		<ul>
-						                  			<li> Click Create. </li> <br>
-						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/adminsms.png" style="width: 100%;"> </center> <br> 
-						                  			<li> A window will appear.</li>
-						                  			<li> Fill out input field.</li> <br>
-						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/adminsms2.png" style="width: 70%;"> </center> <br>
+						                  			<li> SMS Keywords </li>
+						                  				<ul>
+						                  					<li> Primary Keywords </li>
+						                  				    <li> Secondary Keywords </li>
+						                  				</ul> <br>
+						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/smskeywords.png" style="width: 100%;"> </center> <br> 
+						                  				<h5> <strong> <li> Primary Keywords </li> </strong> </h5>
+						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/primarykeywords1.png" style="width: 70%;"> </center> <br>
 						                  					<table class="table table-bordered">
 							                					<thead>
 														            <tr>
@@ -1398,50 +1427,28 @@
 														        </thead>
 														        <tbody>
 														        	<tr>
-														        		<td class="col-sm-1">SMS Keyword</td>
-													                	<td class="col-sm-5">Your SMS Keyword</td> 
-														        	</tr>
-														        </tbody>
-													        </table>
-						                  			<li>  Click Save.</li>
-						                  			<li> Your SMS keyword will be aaded in the datatable.</li> <br>
-						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/adminsms3.png" style="width: 100%;"> </center> <br>
-						                  					<table class="table table-bordered">
-							                					<thead>
-														            <tr>
-														                <th class="col-sm-2"><span>Column</span></th> 
-														                <th class="col-sm-6"><span>Description</span></th>
-														            </tr>
-														        </thead>
-														        <tbody>
-														        	<tr>
 														        		<td class="col-sm-1">ID</td>
-													                	<td class="col-sm-5">SMS Keyword ID</td> 
+													                	<td class="col-sm-5">Primary Keyword ID</td> 
 														        	</tr>
 
 														        	<tr>
-														        		<td class="col-sm-1">Account</td>
-													                	<td class="col-sm-5">User Account</td> 
-														        	</tr>
-
-														        	<tr>
-														        		<td class="col-sm-1">SMS Keyword</td>
-													                	<td class="col-sm-5">SMS keyword</td> 
+														        		<td class="col-sm-1">Keyword</td>
+													                	<td class="col-sm-5">Name of the primary keyword</td> 
 														        	</tr>
 
 														        	<tr>
 														        		<td class="col-sm-1">Created By</td>
-													                	<td class="col-sm-5">Account who created the SMS Keyword</td> 
+													                	<td class="col-sm-5">Account who created the primary keyword.</td> 
 														        	</tr>
 
 														        	<tr>
 														        		<td class="col-sm-1">Date Created</td>
-													                	<td class="col-sm-5">SMS Keyword being created</td> 
+													                	<td class="col-sm-5">Date when primary keyword created.</td> 
 														        	</tr>
 
 														        	<tr>
 														        		<td class="col-sm-1">Action</td>
-													                	<td class="col-sm-5">Delete</td> 
+													                	<td class="col-sm-5">You may edit or delete created primary keyword.</td> 
 														        	</tr>
 														        </tbody>
 													        </table>
@@ -1449,22 +1456,228 @@
 													        <table class="table table-bordered">
 							                					<thead>
 														            <tr>
-														                <th class="col-sm-2"><span>Action</span></th> 
+														                <th class="col-sm-2"><span>Button</span></th> 
 														                <th class="col-sm-6"><span>Description</span></th>
 														            </tr>
 														        </thead>
 														        <tbody>
 														        	<tr>
 														        		<td class="col-sm-1">Create</td>
-													                	<td class="col-sm-5">You may create new SMS keyword</td> 
+													                	<td class="col-sm-5">You may create new keyword.</td> 
 														        	</tr>
 
 														        	<tr>
-														        		<td class="col-sm-1">Delete</td>
-													                	<td class="col-sm-5">You may delete SMS keyword</td> 
+														        		<td class="col-sm-1">Previous</td>
+													                	<td class="col-sm-5">You will go back to the previous page.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Next</td>
+													                	<td class="col-sm-5">You will go forward to the next page.</td> 
 														        	</tr>
 														        </tbody>
 													        </table>
+							                  					<ul>
+						                  							<li> Click Create. </li><br>			
+								                  		   				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/primarykeywords.png" style="width: 70%;"> </center> <br>
+										                  					<table class="table table-bordered">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Parameter</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		        	<tr>
+																		        		<td class="col-sm-1">Keyword Name</td>
+																	                	<td class="col-sm-5">Name of the primary keyword</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Keyword Type</td>
+																	                	<td class="col-sm-5">Primary (default)</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Success Message</td>
+																	                	<td class="col-sm-5">Message if transaction succeed.</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Error Message</td>
+																	                	<td class="col-sm-5">Message if transaction failed.</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Syntax Rule</td>
+																	                	<td class="col-sm-5">To validate message format.</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Keyword Handler</td>
+																	                	<td class="col-sm-5">For specific keyword function.</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Secondary Keywords</td>
+																	                	<td class="col-sm-5">Secondary keyword mapped to primary keywords.</td> 
+																		        	</tr>
+
+																		        	<tr>
+																		        		<td class="col-sm-1">Save Inbound Mobile to Contacts</td>
+																	                	<td class="col-sm-5">Check to save inbound mobile to contacts.</td> 
+																		        	</tr>
+																		        </tbody>
+																	        </table>
+
+																	        <table class="table table-bordered">
+											                					<thead>
+																		            <tr>
+																		                <th class="col-sm-2"><span>Button</span></th> 
+																		                <th class="col-sm-6"><span>Description</span></th>
+																		            </tr>
+																		        </thead>
+																		        <tbody>
+																		        	<tr>
+																		        		<td class="col-sm-1">Save</td>
+																	                	<td class="col-sm-5">To save your new primary keyword.</td> 
+																		        	</tr>
+																		        </tbody>
+																			</table>    	
+										                  			<li>  Click Save.</li><br><br>
+										                  		</ul>	
+
+						                  				<h5> <strong> <li> Secondary Keywords </li> </strong> </h5>
+						                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/secondarykeyword1.png" style="width: 80%;"> </center> <br>
+						                  					<table class="table table-bordered">
+							                					<thead>
+														            <tr>
+														                <th class="col-sm-2"><span>Parameter</span></th> 
+														                <th class="col-sm-6"><span>Description</span></th>
+														            </tr>
+														        </thead>
+														        <tbody>
+														        	<tr>
+														        		<td class="col-sm-1">ID</td>
+													                	<td class="col-sm-5">Secondary Keyword ID</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Keyword</td>
+													                	<td class="col-sm-5">Name of the secondary keyword</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Created By</td>
+													                	<td class="col-sm-5">Account who created the secondary keyword.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Date Created</td>
+													                	<td class="col-sm-5">Date when secondary keyword created.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Action</td>
+													                	<td class="col-sm-5">You may edit or delete created secondary keyword.</td> 
+														        	</tr>
+														        </tbody>
+													        </table>
+
+													         <table class="table table-bordered">
+							                					<thead>
+														            <tr>
+														                <th class="col-sm-2"><span>Button</span></th> 
+														                <th class="col-sm-6"><span>Description</span></th>
+														            </tr>
+														        </thead>
+														        <tbody>
+														        	<tr>
+														        		<td class="col-sm-1">Create</td>
+													                	<td class="col-sm-5">You may create new keyword.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Previous</td>
+													                	<td class="col-sm-5">You will go back to the previous page.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Next</td>
+													                	<td class="col-sm-5">You will go forward to the next page.</td> 
+														        	</tr>
+														        </tbody>
+													        </table>
+													    <ul>
+													    	<li> Click Create. </li> <br>
+													      
+													    <center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/secondarykeywords.png" style="width: 80%;"> </center> <br>
+						                  					<table class="table table-bordered">
+							                					<thead>
+														            <tr>
+														                <th class="col-sm-2"><span>Parameter</span></th> 
+														                <th class="col-sm-6"><span>Description</span></th>
+														            </tr>
+														        </thead>
+														       	<tbody>
+														        	<tr>
+														        		<td class="col-sm-1">Keyword Name</td>
+													                	<td class="col-sm-5">Name of the secondary keyword</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Keyword Type</td>
+													                	<td class="col-sm-5">Secondary (default)</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Success Message</td>
+													                	<td class="col-sm-5">Message if transaction succeed.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Error Message</td>
+													                	<td class="col-sm-5">Message if transaction failed.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Syntax Rule</td>
+													                	<td class="col-sm-5">To validate message format.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Keyword Handler</td>
+													                	<td class="col-sm-5">For specific keyword function.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Primary Keywords</td>
+													                	<td class="col-sm-5">Primary keyword mapped to secondary keywords.</td> 
+														        	</tr>
+
+														        	<tr>
+														        		<td class="col-sm-1">Save Inbound Mobile to Contacts</td>
+													                	<td class="col-sm-5">Check to save inbound mobile to contacts.</td> 
+														        	</tr>
+														        </tbody>
+													        </table>  
+
+													        <table class="table table-bordered">
+							                					<thead>
+														            <tr>
+														                <th class="col-sm-2"><span>Button</span></th> 
+														                <th class="col-sm-6"><span>Description</span></th>
+														            </tr>
+														        </thead>
+														        <tbody>
+														        	<tr>
+														        		<td class="col-sm-1">Save</td>
+													                	<td class="col-sm-5">To save your new secondary keyword.</td> 
+														        	</tr>
+														        </tbody>
+															</table> 
+															<li> Click Save. </li>    
+													    </ul> 
 						                  		</ul>
 						                   	</div>  
 						                </div>
@@ -1878,7 +2091,7 @@
 												        <tbody>
 												            <tr>
 												                <td class="col-sm-1">ID</td>
-												                <td class="col-sm-5"> The count/number of mobile transaction. </td>
+												                <td class="col-sm-5"> The count or number of mobile transaction. </td>
 											 	            </tr>
 
 												             <tr>
@@ -2025,6 +2238,87 @@
 					            	</div>
 
 					            <h1><strong> Reports </strong></h1>	
+					            <h3 id="Inboundlogs"> <strong> Inbound Logs </strong> </h3>
+					            <a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_admin"); ?>" >Back to Top</a> <br> <br>	  
+     								<div class="span4">
+						               	<div class="thumbnail">
+						                  	<div class="caption"> 
+			            						<ul>
+					                  				<center> <img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="assets/img/inboundlogs.png" style="width: 100%;"> </center> <br>
+				                  						<table class="table table-bordered">
+						                					<thead>
+													            <tr>
+													                <th class="col-sm-2"><span>Column</span></th> 
+													                <th class="col-sm-6"><span>Description</span></th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td class="col-sm-1">ID</td>
+													                <td class="col-sm-5">SMS ID</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Date Received</td>
+													                <td class="col-sm-5">Date when SMS received.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">From</td>
+													                <td class="col-sm-5">Sender's mobile number.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">To</td>
+													                <td class="col-sm-5">Sender ID</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Message</td>
+													                <td class="col-sm-5">Sender's message.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Account</td>
+													                <td class="col-sm-5">User's account</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Campaign</td>
+													                <td class="col-sm-5">Campaign's Name</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Action</td>
+													                <td class="col-sm-5">To view Inbound details</td>
+													            </tr>
+													        </tbody>
+											    		</table> 
+
+											    		<table class="table table-bordered">
+											    			<thead>
+													            <tr>
+													                <th class="col-sm-2"><span>Button</span></th> 
+													                <th class="col-sm-6"><span>Description</span></th>
+													            </tr>
+													        </thead>
+													        <tbody>
+													            <tr>
+													                <td class="col-sm-1">Previous</td>
+													                <td class="col-sm-5">You will go back to the previous page.</td>
+													            </tr>
+
+													            <tr>
+													                <td class="col-sm-1">Next</td>
+													                <td class="col-sm-5">You will go forward to the next page.</td>
+													            </tr>
+													        </tbody>    
+											    		</table>
+													</ul>
+												</div>
+											</div>
+										</div>			    	
+
 					            <h3 id="TransacSearch"> <strong> Transaction Search </strong> </h3>
 					            <a type="button" class="btn btn-xs btn-primary" href="<?php echo site_url("sample/page_admin"); ?>" >Back to Top</a> <br> <br>	  
      								<div class="span4">
@@ -2159,7 +2453,7 @@
 													        <tbody>
 													           <tr>
 													                <td class="col-sm-1">ID</td>
-													                <td class="col-sm-5">The count/number of API transaction.</td>
+													                <td class="col-sm-5">The count or number of API transaction.</td>
 													            </tr>
 
 													            <tr>
